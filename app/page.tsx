@@ -118,7 +118,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       <DashboardNav />
 
       <section className="py-20 px-4 overflow-hidden">
@@ -128,13 +128,13 @@ export default function Home() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6">
               Trade Crypto Futures
-              <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">
+              <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">
                 With Confidence
               </span>
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-600 dark:text-slate-300 mb-12 max-w-3xl mx-auto">
               Experience professional-grade crypto derivatives trading with up to 100x leverage,
               ultra-low fees, and institutional security.
             </p>
@@ -163,10 +163,10 @@ export default function Home() {
                 className={`p-4 hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-sm font-semibold text-gray-600 dark:text-gray-400">
+                <div className="text-sm font-semibold text-slate-600 dark:text-slate-400">
                   {market.symbol}
                 </div>
-                <div className="text-2xl font-bold text-gray-900 dark:text-white mt-2">
+                <div className="text-2xl font-bold text-slate-900 dark:text-white mt-2">
                   ${market.price.toLocaleString()}
                 </div>
                 <div
@@ -183,13 +183,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-white dark:bg-gray-800">
+      <section className="py-20 px-4 bg-white dark:bg-slate-800">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
               Trusted by Traders Worldwide
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
+            <p className="text-xl text-slate-600 dark:text-slate-300">
               Join the leading crypto derivatives platform
             </p>
           </div>
@@ -200,10 +200,10 @@ export default function Home() {
                 className={`text-center animate-fade-in`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-4xl md:text-5xl font-bold text-emerald-600 dark:text-emerald-500 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-500 mb-2">
                   {stat.value}
                 </div>
-                <div className="text-gray-600 dark:text-gray-400">{stat.label}</div>
+                <div className="text-slate-600 dark:text-slate-400">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -214,74 +214,74 @@ export default function Home() {
                 className={`text-center hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in`}
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="text-emerald-600 dark:text-emerald-500 mb-4 flex justify-center">
+                <div className="text-blue-600 dark:text-blue-500 mb-4 flex justify-center">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
+                <p className="text-slate-600 dark:text-slate-300">{feature.description}</p>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-r from-emerald-600 to-teal-600 dark:from-emerald-700 dark:to-teal-700">
+      <section className="py-20 px-4 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Start Trading?
           </h2>
-          <p className="text-xl text-emerald-50 mb-8">
+          <p className="text-xl text-blue-50 mb-8">
             Open your account in minutes and start trading with the best tools in the industry
           </p>
           <Link href="/signup">
-            <Button size="lg" className="bg-white text-emerald-600 hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-slate-100">
               Create Free Account
             </Button>
           </Link>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-slate-50 dark:bg-gray-900">
+      <section className="py-20 px-4 bg-slate-50 dark:bg-slate-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">How It Works</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
+            <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">How It Works</h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300">
               Get started in three simple steps
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center animate-fade-in">
-              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                 Create Account
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-slate-600 dark:text-slate-300">
                 Sign up with your email and verify your identity in minutes
               </p>
             </div>
             <div className="text-center animate-fade-in" style={{ animationDelay: '200ms' }}>
-              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                 Deposit Funds
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-slate-600 dark:text-slate-300">
                 Transfer crypto or deposit fiat via bank transfer or card
               </p>
             </div>
             <div className="text-center animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">
                 Start Trading
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-slate-600 dark:text-slate-300">
                 Access advanced trading tools and start your trading journey
               </p>
             </div>
@@ -289,21 +289,21 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-12 px-4">
+      <footer className="bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 py-12 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-bold text-emerald-600 dark:text-emerald-500 mb-4">FYBIT</h3>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
+            <h3 className="text-lg font-bold text-blue-600 dark:text-blue-500 mb-4">FYBIT</h3>
+            <p className="text-slate-600 dark:text-slate-400 text-sm">
               Professional cryptocurrency derivatives trading platform
             </p>
           </div>
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Product</h4>
+            <h4 className="font-semibold text-slate-900 dark:text-white mb-4">Product</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/about"
-                  className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+                  className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors"
                 >
                   About
                 </Link>
@@ -311,7 +311,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/fees"
-                  className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+                  className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors"
                 >
                   Fees
                 </Link>
@@ -319,7 +319,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/faq"
-                  className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+                  className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors"
                 >
                   FAQ
                 </Link>
@@ -327,12 +327,12 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Support</h4>
+            <h4 className="font-semibold text-slate-900 dark:text-white mb-4">Support</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/contact"
-                  className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+                  className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors"
                 >
                   Contact
                 </Link>
@@ -340,7 +340,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/affiliate"
-                  className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+                  className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors"
                 >
                   Affiliate
                 </Link>
@@ -348,12 +348,12 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Legal</h4>
+            <h4 className="font-semibold text-slate-900 dark:text-white mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
                   href="/terms"
-                  className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+                  className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors"
                 >
                   Terms
                 </Link>
@@ -361,7 +361,7 @@ export default function Home() {
               <li>
                 <Link
                   href="/privacy"
-                  className="text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+                  className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-500 transition-colors"
                 >
                   Privacy
                 </Link>
@@ -369,7 +369,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-gray-600 dark:text-gray-400 text-sm">
+        <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-slate-200 dark:border-slate-700 text-center text-slate-600 dark:text-slate-400 text-sm">
           &copy; 2025 FYBIT. All rights reserved.
         </div>
       </footer>

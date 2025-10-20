@@ -28,12 +28,12 @@ export function AdminNav() {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className="bg-gray-800 border-b border-gray-700">
+    <nav className="bg-slate-900 border-b border-slate-700 shadow-lg">
       <div className="max-w-full px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-8">
             <Link href="/admin/dashboard" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center shadow-sm">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
@@ -46,8 +46,8 @@ export function AdminNav() {
                 href="/admin/dashboard"
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   isActive('/admin/dashboard')
-                    ? 'bg-gray-700 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'text-slate-300 hover:bg-slate-800 hover:text-white'
                 }`}
               >
                 Dashboard
@@ -56,8 +56,8 @@ export function AdminNav() {
                 href="/admin/users"
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   isActive('/admin/users')
-                    ? 'bg-gray-700 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'text-slate-300 hover:bg-slate-800 hover:text-white'
                 }`}
               >
                 Users
@@ -66,8 +66,8 @@ export function AdminNav() {
                 href="/admin/trades"
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   isActive('/admin/trades')
-                    ? 'bg-gray-700 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'text-slate-300 hover:bg-slate-800 hover:text-white'
                 }`}
               >
                 Trades
@@ -76,8 +76,8 @@ export function AdminNav() {
                 href="/admin/kyc"
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   isActive('/admin/kyc')
-                    ? 'bg-gray-700 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'text-slate-300 hover:bg-slate-800 hover:text-white'
                 }`}
               >
                 KYC
@@ -86,8 +86,8 @@ export function AdminNav() {
                 href="/admin/settings"
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   isActive('/admin/settings')
-                    ? 'bg-gray-700 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                    ? 'bg-blue-600 text-white shadow-sm'
+                    : 'text-slate-300 hover:bg-slate-800 hover:text-white'
                 }`}
               >
                 Settings
@@ -98,15 +98,15 @@ export function AdminNav() {
           <div className="flex items-center space-x-4">
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg hover:bg-gray-700 transition-colors"
+              className="p-2 rounded-lg hover:bg-slate-800 transition-colors"
               aria-label="Toggle theme"
             >
               {theme === 'light' ? (
-                <svg className="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
               ) : (
-                <svg className="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               )}
@@ -115,14 +115,14 @@ export function AdminNav() {
             <div className="relative">
               <button
                 onClick={() => setShowUserMenu(!showUserMenu)}
-                className="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-700 transition-colors"
+                className="flex items-center space-x-2 p-2 rounded-lg hover:bg-slate-800 transition-colors"
               >
-                <div className="w-8 h-8 bg-emerald-600 rounded-full flex items-center justify-center text-white font-semibold text-sm">
+                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-semibold text-sm shadow-sm">
                   A
                 </div>
-                <span className="hidden sm:block text-sm text-gray-300">{adminEmail}</span>
+                <span className="hidden sm:block text-sm text-slate-300">{adminEmail}</span>
                 <svg
-                  className="w-4 h-4 text-gray-400"
+                  className="w-4 h-4 text-slate-400"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -137,13 +137,13 @@ export function AdminNav() {
               </button>
 
               {showUserMenu && (
-                <div className="absolute right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg border border-gray-700 py-1 z-50 animate-slide-in">
-                  <div className="px-4 py-2 text-sm text-gray-400 border-b border-gray-700">
+                <div className="absolute right-0 mt-2 w-48 bg-slate-800 rounded-lg shadow-lg border border-slate-700 py-1 z-50 animate-slide-in">
+                  <div className="px-4 py-2 text-sm text-slate-400 border-b border-slate-700">
                     Admin Account
                   </div>
                   <button
                     onClick={handleLogout}
-                    className="block w-full text-left px-4 py-2 text-sm text-red-400 hover:bg-gray-700 transition-colors"
+                    className="block w-full text-left px-4 py-2 text-sm text-red-400 hover:bg-slate-700 transition-colors"
                   >
                     Logout
                   </button>
