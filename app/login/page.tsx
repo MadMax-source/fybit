@@ -29,6 +29,7 @@ export default function LoginPage() {
 
       // Example: mock login check
       if (email === 'admin@example.com' && password === 'password123') {
+        localStorage.setItem('user', JSON.stringify({ email }));
         router.push('/dashboard');
       } else {
         throw new Error('Invalid credentials');

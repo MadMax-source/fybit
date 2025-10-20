@@ -36,7 +36,8 @@ export default function SignupPage() {
       // Temporary placeholder: simulate successful signup
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
-      router.push('/verify-email');
+      localStorage.setItem('user', JSON.stringify({ email }));
+      router.push('/dashboard');
     } catch {
       setError('An error occurred during signup');
     } finally {
